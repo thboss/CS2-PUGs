@@ -1,0 +1,33 @@
+{
+  "bot": {
+    "prefix": "!",
+    "token": "",
+    "guild_id": 1234567890,
+    "sync_commands_globally": true,
+    "debug": false,
+    "maps": {
+      "de_dust2": "Dust II",
+      "de_inferno": "Inferno",
+      "de_vertigo": "Vertigo",
+      "de_overpass": "Overpass",
+      "de_mirage": "Mirage",
+      "de_nuke": "Nuke",
+      "de_ancient": "Ancient"
+    }
+  },
+  "dathost": {
+    "email": "",
+    "password": ""
+  },
+  "webserver": {
+    "host": "",
+    "port": 3000
+  }
+  "db": {
+    "user": "g5",
+    "password": "yourpassword",
+    "database": "g5",
+    "host": "localhost",
+    "port": "5432"
+  }
+}
