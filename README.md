@@ -1,4 +1,4 @@
-# G5 Bot
+# CS2 PUGs Bot
 
 A Discord bot to manage CS2 PUGs. Connects to your DatHost servers.
 
