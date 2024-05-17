@@ -1,6 +1,6 @@
 # CS2 PUGs Bot
 
-A Discord bot to manage CS2 PUGs. Connects to your DatHost servers.
+A Discord bot to manage CS2 PUGs. Connects to [DatHost API](https://dathost.net/reference/post_api-0-1-cs2-matches).
 
 ## Setup
 
