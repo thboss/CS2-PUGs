@@ -66,7 +66,7 @@ A Discord bot to manage CS2 PUGs. Connects to [DatHost API](https://dathost.net/
 - **Create lobby:** Create a lobby using command `/create-lobby` (You can create unlimited number of lobbies as you need)
    - Note: This command requires Administrator permissions.
 - **Link Steam:** To participate in lobbies, link your Steam account with the command `/link-steam`. This will grant you the Linked role, indicating you’re ready to join lobbies.
-   - Note: You need to link your account only once, but you can reuse this command to change you linked steam.
+   - You need to link your account only once, but you can reuse this command to change you linked steam.
 - **Join Lobby:** Simply, join the lobby voice channel, and bot will automatically add you to the queue.
    - Leave the lobby channel to remove from the queue.
 - **Match Setup:** Once the lobby is full, the bot will automatically handle the game setup and notify all players as well as create teams channels, ensuring each player is moved to their respective channel.
