@@ -2,6 +2,9 @@
 
 A Discord bot to manage CS2 PUGs. Connects to [DatHost API](https://dathost.net/reference/post_api-0-1-cs2-matches).
 
+## Test
+If you wish to test the bot without any setup, feel free to [invite it](https://discord.com/oauth2/authorize?client_id=820447661932019734&permissions=2433788944&scope=applications.commands+bot) to your Discord server.
+
 ## Setup
 
 1. Install PostgreSQL 9.5 or higher.
