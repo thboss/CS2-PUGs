@@ -22,7 +22,7 @@
   "webserver": {
     "host": "",
     "port": 3000
-  }
+  },
   "db": {
     "user": "g5",
     "password": "yourpassword",
