@@ -134,7 +134,7 @@ class LobbyCog(commands.Cog, name="Lobby"):
 
     @app_commands.command(
         name='delete-lobby',
-        description='delete the provided lobby.'
+        description='delete a lobby.'
     )
     @app_commands.describe(lobby_id="Lobby ID.")
     @app_commands.checks.has_permissions(administrator=True)
@@ -165,7 +165,7 @@ class LobbyCog(commands.Cog, name="Lobby"):
 
     @app_commands.command(
         name='empty-lobby',
-        description='Empty the provided lobby and move users into Pre-Match channel.'
+        description='Empty a lobby and move users into Waiting Room.'
     )
     @app_commands.describe(lobby_id="Lobby ID.")
     @app_commands.checks.has_permissions(administrator=True)
@@ -194,7 +194,7 @@ class LobbyCog(commands.Cog, name="Lobby"):
         embed = Embed(description=f"Lobby #{lobby_model.id} has been emptied.")
         await interaction.followup.send(embed=embed, ephemeral=True)
 
-    @app_commands.command(name="add-spectator", description="Add a user to the matches")
+    @app_commands.command(name="add-spectator", description="Add a user to the spectators list")
     @app_commands.checks.has_permissions(administrator=True)
     async def add_spectator(self, interaction: Interaction, user: Member):
         """"""
@@ -346,7 +346,7 @@ class LobbyCog(commands.Cog, name="Lobby"):
         try:
             await self.bot.db.insert_lobby_user(lobby_model.id, user)
         except UniqueViolationError:
-            raise JoinLobbyError(user, "Please try again")
+            raise JoinLobbyError(user, "Please try again (Database Error)")
 
     async def update_queue_msg(self, lobby_model: LobbyModel, title: str=None):
         """"""
